@@ -32,7 +32,7 @@ export default function MangaPage() {
                 new Date(b.createdAt).getTime() -
                 new Date(a.createdAt).getTime()
             )
-            .map(({ name, id, view }) => (
+            .map(({ name, id }) => (
               <Link to={`/manga/${params.id}/${id}`} key={id} prefetch="intent">
                 <div className="text-xl p-3 border-b">{name}</div>
               </Link>

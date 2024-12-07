@@ -27,7 +27,12 @@ export default function MangaChapter() {
     <>
       <PrevNext {...controlData} />
       {images.map((page) => (
-        <img src={page.image} className="w-full" />
+        <img
+          src={page.image}
+          key={page.title}
+          alt={page.title}
+          className="w-full"
+        />
       ))}
       <PrevNext {...controlData} />
     </>
